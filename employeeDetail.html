@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body ng-app="app.employee">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="../../scripts/angular.min.js"></script>
+    <script src="employeeController.js"></script>
+    <script src="../../scripts/bootstrap.min.js"></script>
+
+    <div ng-controller="employeeController as vm">
+        <form role="form" class="form-horizontal" name="employeeForm" novalidate style="margin: auto; width: 95%;"></form>
+        <div ng-grid="vm.loadEmployee();"></div>
+    </div>
+</body>
+</html>
